@@ -89,3 +89,18 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 Copyright © Microsoft Corporation All rights reserved.<br />
 Licensed under the MIT License. See LICENSE in the project root for license information.
+
+//PROGRAMMA BY VALENTINA INCANDELA
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci il tuo nome:");
+        String nome = scanner.nextLine();
+        System.out.print("Inserisci la tua classe:");
+        String classe = scanner.nextLine();
+        System.out.println("Il tuo nome è " + nome + " e la tua classe è " + classe);
+    }
+}
