@@ -1,13 +1,5 @@
-# Try Out Development Containers: Java3
-boolean trovato;
-if(trovato==true)
-{
-    System.out.println("Trovato");
-}
-else
-{
-    System.out.println("Non trovato");
-}
+# Try Out Development Containers: Java90
+System.out.println "ciao sono alino"
 
 [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-java)
 
