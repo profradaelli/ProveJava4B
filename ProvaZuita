@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class CalcolaMediaScolastica {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int numMaterie = 7; // il numero di materie scolastiche
+        int sommaVoti = 0; // la somma dei voti delle sette materie
+
+        // chiedi all'utente di inserire i voti per ogni materia
+        for (int i = 1; i <= numMaterie; i++) {
+            System.out.print("Inserisci il voto per la materia " + i + " (da 5 a 10): ");
+            int voto = input.nextInt();
+
+            // verifica che il voto inserito sia valido
+            if (voto < 5 || voto > 10) {
+                System.out.println("Voto non valido, inserisci un voto da 5 a 10.");
+                i--;
+                continue;
+            }
+
+            sommaVoti += voto; // aggiungi il voto alla somma totale
+        }
+
+        double media = (double) sommaVoti / numMaterie; // calcola la media scolastica
+
+        System.out.println("La media scolastica dell'alunno è: " + media);
+    }
+}
